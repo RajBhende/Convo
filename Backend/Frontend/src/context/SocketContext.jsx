@@ -15,7 +15,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
-      const socket = io("https://convo-production-df96.up.railway.app/", {
+      const socket = io("https://convo-2qd6.onrender.com", {
         query: {
           userId: authUser.user._id,
         },

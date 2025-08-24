@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://convo-production-df96.up.railway.app/",
+    origin: "https://convo-2qd6.onrender.com",
     methods: ["GET", "POST"],
   },
 });
