@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3001,
     proxy: {
       "/api": {
-        target: "http://localhost:5002",
+        target: "https://convo-2qd6.onrender.com",
         changeOrigin: true,
       },
     },
