@@ -15,7 +15,7 @@ function Typesend() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="flex items-center px-4 py-2 bg-gray-50 border-t border-gray-300">
+      <div className="flex items-center px-4 py-2 rounded-xl border-gray-300 ">
         {/* Input Box */}
         <input
           type="text"

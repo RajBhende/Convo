@@ -10,17 +10,17 @@ function User({ user }) {
 
   return (
     <div
-      className={`hover:bg-gray-200 duration-300 ${
-        isSelected ? "bg-gray-300" : ""
+      className={`hover:bg-gray-200 rounded-xl duration-300 ${
+        isSelected ? "bg-gray-300" : "" 
       }`}
       onClick={() => setSelectedConversation(user)}
     >
-      <div className="flex space-x-4 px-8 py-3 hover:bg-gray-200 duration-300 cursor-pointer">
+      <div className="flex space-x-4 px-8 py-3 hover:bg-gray-200 rounded-xl duration-300 cursor-pointer">
         <div className={`avatar ${isOnline ? "online" : ""}`}>
           <div className="w-12 rounded-full">
             <img src="profile.png" />
           </div>
-        </div>
+        </div>  
         <div>
           <h1 className="font-bold text-gray-900">{user.name}</h1>
           <span className="text-gray-600">{user.email}</span>

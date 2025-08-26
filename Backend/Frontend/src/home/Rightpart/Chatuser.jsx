@@ -11,7 +11,7 @@ function Chatuser() {
   };
 
   return (
-    <div className="pl-5 pt-5 h-[12vh] flex space-x-4 bg-gray-100 hover:bg-gray-200 duration-300">
+    <div className="pl-5 pt-5 h-[12vh] flex space-x-4 bg-[#4B61DD] rounded-xl ">
       <div>
         <div className="avatar online">
           <div className="w-14 rounded-full">

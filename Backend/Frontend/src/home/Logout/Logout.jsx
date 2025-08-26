@@ -24,15 +24,15 @@ function Logout() {
   };
 
   return (
-    <div className="w-[4%] bg-gray-100 text-gray-800 flex flex-col justify-end items-center py-6 border-r border-gray-200">
+    <div className="text-gray-800 flex flex-col justify-end items-center py-2">
       <button
         onClick={handleLogout}
         disabled={loading}
-        className="group relative flex items-center justify-center p-3 rounded-full hover:bg-red-100 transition duration-300 disabled:opacity-50"
+        className="group relative flex items-center justify-center p-2 rounded-full hover:bg-red-100 transition duration-300 disabled:opacity-50"
       >
-        <FiLogOut className="text-3xl text-red-600" />
+        <FiLogOut className="text-lg text-red-600" />  
         {/* Tooltip */}
-        <span className="absolute left-full ml-3 px-2 py-1 text-sm bg-gray-800 text-white rounded-md opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+        <span className="absolute left-full ml-2 px-2 py-1 text-xs bg-gray-800 text-white rounded-md opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
           Logout
         </span>
       </button>
