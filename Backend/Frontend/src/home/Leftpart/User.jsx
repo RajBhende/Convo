@@ -15,15 +15,15 @@ function User({ user }) {
       }`}
       onClick={() => setSelectedConversation(user)}
     >
-      <div className="flex space-x-4 px-8 py-3 hover:bg-gray-200 rounded-xl duration-300 cursor-pointer">
+      <div className="flex space-x-4 px-2  py-3 hover:bg-gray-300 rounded-xl duration-300 cursor-pointer">
         <div className={`avatar ${isOnline ? "online" : ""}`}>
-          <div className="w-12 rounded-full">
+          <div className="w-10 h-10 rounded-full">
             <img src="profile.png" />
           </div>
         </div>  
         <div>
-          <h1 className="font-bold text-gray-900">{user.name}</h1>
-          <span className="text-gray-600">{user.email}</span>
+          <h1 className="text-foreground truncate text-sm font-medium ">{user.fullname}</h1>
+          <span className="text-gray-600 ">{user.email}</span>
         </div>
       </div>
     </div>

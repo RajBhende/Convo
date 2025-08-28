@@ -1,27 +1,30 @@
 import React from "react";
 import useConversation from "../../statemanage/useConversation.js";
 import { useSocketContext } from "../../context/SocketContext.jsx";
-import { CiMenuFries } from "react-icons/ci";
 
 function Chatuser() {
   const { selectedConversation } = useConversation();
   const { onlineUsers } = useSocketContext();
+
   const getOnlineUsersStatus = (userId) => {
     return onlineUsers.includes(userId) ? "Online" : "Offline";
   };
 
+  if (!selectedConversation) return null; // handle no selection
+
   return (
-    <div className="pl-5 pt-5 h-[12vh] flex space-x-4 bg-[#4B61DD] rounded-xl ">
-      <div>
-        <div className="avatar online">
-          <div className="w-14 rounded-full">
-            <img src="profile.png" />
-          </div>
+    <div className="w-full h-[10vh] bg-[#4B61DD] flex items-center px-5 rounded-xl">
+      {/* Avatar */}
+      <div className="avatar online">
+        <div className="w-12 h-12 rounded-full overflow-hidden">
+          <img src="profile.png" alt="User Avatar" className="object-cover w-full h-full" />
         </div>
       </div>
-      <div>
-        <h1 className="text-xl text-gray-900">{selectedConversation.name}</h1>
-        <span className="text-sm text-gray-600">
+
+      {/* User Info */}
+      <div className="ml-4 flex flex-col justify-center">
+        <h1 className="text-xl font-semibold text-white">{selectedConversation.name}</h1>
+        <span className="text-sm text-white/80">
           {getOnlineUsersStatus(selectedConversation._id)}
         </span>
       </div>

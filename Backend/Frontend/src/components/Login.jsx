@@ -42,7 +42,7 @@ function Login() {
         onSubmit={handleSubmit(onSubmit)}
         className="bg-white shadow-xl rounded-2xl px-8 py-6 w-96"
       >
-        <h1 className="text-3xl font-bold text-blue-600 text-center">Messen</h1>
+        <h1 className="text-3xl font-bold text-blue-600 text-center">Messenger</h1>
         <p className="text-gray-600 text-center mt-1 mb-6">
           Login to your <span className="text-blue-600 font-semibold">Account</span>
         </p>

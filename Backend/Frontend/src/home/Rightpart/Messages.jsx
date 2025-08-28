@@ -22,7 +22,7 @@ function Messages() {
 
   return (
     <div
-      className="flex-1 overflow-y-auto bg-white text-gray-900"
+      className="flex-1 overflow-y-auto bg-[#FFFFFF] text-gray-900"
       style={{ minHeight: "calc(92vh - 8vh)" }}
     >
       {loading ? (

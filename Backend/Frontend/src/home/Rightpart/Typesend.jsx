@@ -15,7 +15,21 @@ function Typesend() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="flex items-center px-4 py-2 rounded-xl border-gray-300 ">
+      <div className="flex items-center bg-[#FFFFFF] px-4 mt-3 rounded-xl border-gray-300 space-x-3">
+        {/* Emoji + Upload Icons (from public folder) */}
+        <div className="flex items-center space-x-3">
+          <img
+            src="/emoji.png"
+            alt="Emoji"
+            className="w-5 h-5 cursor-pointer hover:opacity-70 transition"
+          />
+          <img
+            src="/upload.png"
+            alt="Upload"
+            className="w-4 h-5 cursor-pointer hover:opacity-70 transition"
+          />
+        </div>
+
         {/* Input Box */}
         <input
           type="text"
@@ -29,7 +43,7 @@ function Typesend() {
         <button
           type="submit"
           disabled={loading}
-          className="ml-3 p-3 rounded-full bg-blue-500 hover:bg-blue-600 text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
+          className="ml-3 p-2 rounded-full bg-blue-500 hover:bg-blue-600 text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <IoSend className="text-xl" />
         </button>

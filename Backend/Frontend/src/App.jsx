@@ -5,8 +5,9 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import { useAuth } from "./context/AuthProvider";
 import { Toaster } from "react-hot-toast";
+import Mostright from "./home/Mostright/Mostright"
 
-import Navbar from "./components/Navbar"; // Navbar import केला आहे
+import Navbar from "./components/comp-584"; // Navbar import केला आहे
 
 import { Navigate, Route, Routes } from "react-router-dom";
 
@@ -26,10 +27,11 @@ function App() {
                 {/* Navbar top */}
                 <Navbar />
 
-                {/* Left + Right below navbar */}
-                <div className="flex flex-1 bg-[#FAFAFA]">
+                {/* Left + Right below navbar  /* bg-[#FAFAFA]*\ */}
+                <div className="flex flex-1 bg-[#FAFAFA]"> 
                   <Left />
                   <Right />
+                  <Mostright/>
                 </div>
               </div>
             ) : (
